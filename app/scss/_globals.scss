@@ -1,0 +1,212 @@
+@import "variables";
+
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  width: 100vw;
+  height: 75px;
+  background-color: $font-color-dark;
+  @include flex();
+  justify-content: space-between;
+
+  &__left {
+    margin-left: 10%;
+    @include flex();
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &__right {
+    margin-right: 10%;
+    @include flex();
+
+    svg {
+      margin-right: 20px;
+    }
+  }
+}
+
+.top-brand {
+  @include flex();
+  justify-content: space-between;
+  width: 100vw;
+  height: 764px;
+  background-color: $colot-fill-top;
+}
+
+.top__header {
+  @include flex();
+  margin-right: 20%;
+}
+
+.rect {
+  background-color: $font-color-pink;
+  width: 12px;
+  height: 92px;
+  margin-right: 10px;
+}
+
+.top__header-text {
+  > h1 {
+    font-size: $font-3xl;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  > h2 {
+    font-size: $font-2xl;
+    margin: 0;
+    font-weight: 700;
+    > span {
+      color: $font-color-pink;
+    }
+  }
+}
+
+.main__top {
+  width: 100vw;
+  margin-top: 65px;
+
+  .main__top-top {
+    @include flex();
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-size: $font-md;
+    font-weight: 400;
+    text-align: center;
+
+    .pic1 {
+      width: 360px;
+      height: 260px;
+      padding: 90px;
+      background-image: url("../../img/si1.jpg");
+
+      > span {
+        color: $font-color-pink;
+        font-size: $font-lg;
+      }
+    }
+
+    .pic2 {
+      width: 360px;
+      height: 260px;
+      padding: 90px;
+      background-image: url("../../img/si2.jpg");
+      > span {
+        color: $font-color-pink;
+        font-size: $font-lg;
+      }
+    }
+
+    .pic3 {
+      width: 360px;
+      height: 260px;
+      padding: 90px;
+      background-image: url("../../img/si3.jpg");
+      > span {
+        color: $font-color-pink;
+        font-size: $font-lg;
+      }
+    }
+  }
+
+  .main__top-bottom {
+    height: 180px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    font-size: $font-md;
+    font-weight: 400;
+    text-align: center;
+    padding: 70px;
+    background-image: url("../../img/sibig.jpg");
+
+    > span {
+      color: $font-color-pink;
+      font-size: $font-lg;
+    }
+  }
+
+}
+
+.items {
+  margin-top: 80px;
+  @include flex();
+  flex-direction: column;
+
+  text-align: center;
+  > h1 {
+    font-size: $font-xl;
+    margin: 6px;
+  }
+  > p {
+    font-size: $font-sm;
+    color: $font-color-grey;
+  }
+}
+
+.cards {
+  margin-left: 10%;
+  margin-right: 10%;
+  @include flex();
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: left;
+
+  .card {
+    width: 360px;
+
+    > h2 {
+      font-size: $font-sm;
+      font-weight: 400;
+    }
+
+    > p {
+      font-size: $font-sm;
+      font-weight: 300;
+      color: $font-color-dark-grey;
+
+      > span {
+        color: $font-color-pink;
+        font-size: $font-md;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.button {
+  width: 221px;
+  height: 48px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: $color-button-text;
+  font-size: $font-md;
+  border: 2px solid;
+  border-color: $color-button-text;
+  padding: 10px;
+}
