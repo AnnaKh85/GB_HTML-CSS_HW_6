@@ -34,3 +34,38 @@
     margin-right: 2rem;
   }
 }
+
+@media (max-width: 380px) {
+  .cart {
+    display: none;
+  }
+  .acc {
+    display: none;
+  }
+  .menu {
+    width: 3.2rem;
+    height: 2.3rem;
+  }
+  .search {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .top-brand img {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+  .main__top-top {
+    flex-direction: column;
+  }
+  .pics {
+    max-width: 34.3rem;
+  }
+
+  .items {
+    margin: 0 auto;
+  }
+}
