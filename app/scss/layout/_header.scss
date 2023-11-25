@@ -1,0 +1,25 @@
+.header {
+    width: 100vw;
+    height: 7.5rem;
+    background-color: $font-color-dark;
+    @include flex();
+    justify-content: space-between;
+  
+    &__left {
+      margin-left: 10%;
+      @include flex();
+  
+      img {
+        margin-right: 2rem;
+      }
+    }
+  
+    &__right {
+      margin-right: 10%;
+      @include flex();
+  
+      svg {
+        margin-right: 2rem;
+      }
+    }
+  }

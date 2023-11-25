@@ -1,70 +1,21 @@
-@import "variables";
-
-@mixin flex() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.header {
-  width: 100vw;
-  height: 75px;
-  background-color: $font-color-dark;
-  @include flex();
-  justify-content: space-between;
-
-  &__left {
-    margin-left: 10%;
-    @include flex();
-
-    img {
-      margin-right: 20px;
-    }
-  }
-
-  &__right {
-    margin-right: 10%;
-    @include flex();
-
-    svg {
-      margin-right: 20px;
-    }
-  }
-}
-
 .top-brand {
   @include flex();
   justify-content: space-between;
   width: 100vw;
-  height: 764px;
+  max-height: 76.4rem;
   background-color: $colot-fill-top;
 }
 
 .top__header {
   @include flex();
-  margin-right: 20%;
+  margin-right: 4rem;
 }
 
 .rect {
   background-color: $font-color-pink;
-  width: 12px;
-  height: 92px;
-  margin-right: 10px;
+  width: 1.2rem;
+  height: 9.2rem;
+  margin-right: 1rem;
 }
 
 .top__header-text {
@@ -85,64 +36,59 @@ html {
 }
 
 .main__top {
+  @include flex();
+  flex-direction: column;
   width: 100vw;
-  margin-top: 65px;
+  margin-top: 6.5rem;
 
   .main__top-top {
     @include flex();
-    gap: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    gap: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: white;
     font-size: $font-md;
     font-weight: 400;
     text-align: center;
 
-    .pic1 {
-      width: 360px;
-      height: 260px;
-      padding: 90px;
-      background-image: url("../../img/si1.jpg");
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+
+    .pics {
+      max-width: calc((100% - #{$gutter-horizontal}) / 3);
+      padding: 9rem;
 
       > span {
         color: $font-color-pink;
         font-size: $font-lg;
       }
+    }
+
+    .pic1 {
+      background-image: url("../../img/si1.jpg");
     }
 
     .pic2 {
-      width: 360px;
-      height: 260px;
-      padding: 90px;
       background-image: url("../../img/si2.jpg");
-      > span {
-        color: $font-color-pink;
-        font-size: $font-lg;
-      }
     }
 
     .pic3 {
-      width: 360px;
-      height: 260px;
-      padding: 90px;
       background-image: url("../../img/si3.jpg");
-      > span {
-        color: $font-color-pink;
-        font-size: $font-lg;
-      }
     }
   }
 
   .main__top-bottom {
-    height: 180px;
-    margin-top: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 114rem;
+    height: 18rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
     color: white;
     font-size: $font-md;
     font-weight: 400;
     text-align: center;
-    padding: 70px;
+    padding: 7rem;
     background-image: url("../../img/sibig.jpg");
 
     > span {
@@ -150,11 +96,10 @@ html {
       font-size: $font-lg;
     }
   }
-
 }
 
 .items {
-  margin-top: 80px;
+  margin-top: 8rem;
   @include flex();
   flex-direction: column;
 
@@ -174,11 +119,11 @@ html {
   margin-right: 10%;
   @include flex();
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 3rem;
   text-align: left;
 
   .card {
-    width: 360px;
+    width: 36rem;
 
     > h2 {
       font-size: $font-sm;
@@ -197,16 +142,4 @@ html {
       }
     }
   }
-}
-
-.button {
-  width: 221px;
-  height: 48px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: $color-button-text;
-  font-size: $font-md;
-  border: 2px solid;
-  border-color: $color-button-text;
-  padding: 10px;
 }
