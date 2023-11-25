@@ -1,0 +1,11 @@
+{
+  "name": "geekbrains",
+  "version": "1.0.0",
+  "description": "geekbrains homeworks",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch app/scss/style.scss dist/style.css"
+  },
+  "author": "Anna Khizhnyakova",
+  "license": "ISC"
+}

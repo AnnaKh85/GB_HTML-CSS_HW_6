@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+@media (max-width: 768px) {
+  .top-brand img {
+    max-width: 40rem;
+  }
+
+  .top__header {
+    margin-right: 0;
+  }
+
+  .top__header-text {
+    max-width: 100%;
+  }
+
+  .top__header-text h1 {
+    font-size: $font-2xl-tab;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .top__header-text h2 {
+    font-size: $font-sm;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .main__top-bottom {
+    max-width: 73.4rem;
+  }
+
+  .cards {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
