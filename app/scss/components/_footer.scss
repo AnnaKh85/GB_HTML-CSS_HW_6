@@ -1,0 +1,136 @@
+footer {
+  max-width: 160rem;
+  @include flex();
+  flex-direction: column;
+  margin: 0 auto;
+
+  .top {
+    width: 160rem;
+    height: 34rem;
+    @include flex();
+    background-color: #222224;
+    color: #fbfbfb;
+
+    &__content {
+      @include flex();
+      flex-direction: column;
+      max-width: 36rem;
+      .svg-icon {
+        width: 4.4rem;
+      }
+      > h3 {
+        font-size: 19.96px;
+        font-weight: 400;
+      }
+      > p {
+        text-align: center;
+        font-size: 13.972px;
+        font-style: normal;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .middle {
+    width: 160rem;
+    height: 44.8rem;
+    background: rgba(244, 244, 244, 0.7);
+    background-image: url("../img/Layer 41.svg");
+    margin: 0 auto;
+    @include flex();
+    gap: 8rem;
+
+    &__left {
+      width: 36rem;
+      @include flex();
+      flex-direction: column;
+
+      > p {
+        color: #222224;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+
+    &__right {
+      @include flex();
+      flex-direction: column;
+
+      > p > span {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 167.2%; /* 40.128px */
+      }
+
+      > p {
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 167.2%;
+      }
+
+      .form {
+        @include flex();
+
+        > input {
+          width: 25.6rem;
+          height: 4.9rem;
+          border-radius: 30px;
+        }
+
+        &__button {
+          width: 10rem;
+          height: 4.9rem;
+          background-image: url("../img/Rounded-Rectangle5.svg");
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          color: #fff;
+          text-align: center;
+          padding: 12px 5px;
+          margin-left: -18px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    @include flex();
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 36, 1);
+    width: 160rem;
+    height: 7.9rem;
+    margin: 0 auto;
+
+    &__left {
+      margin-left: 20rem;
+
+      > p {
+        color: #fbfbfb;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+    &__right {
+        margin-right: 30rem;
+        @include flex();
+        gap: 5px;
+
+        &-icon{
+            width: 3.2rem;
+            height: 3.2rem;
+            background-color: #fff;
+            padding: 8px 8px;
+        }
+    }
+  }
+}
